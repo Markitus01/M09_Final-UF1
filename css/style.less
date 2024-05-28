@@ -1,0 +1,395 @@
+@import url('satoshi.css');
+
+html 
+{
+    height: 100%;
+    width: 100%;
+
+    h1, h2
+    {
+        font-family: Satoshi-Bold;
+        font-size: 80px;
+        color: #ffffff;
+    }
+
+    h2
+    {
+        font-size: 56px;
+    }
+
+    button
+    {
+        font-family: Satoshi-Medium;
+        font-size: 18px;
+    }
+
+    .p1, .p2, .p3
+    {
+        font-family: Satoshi-Regular;
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    .p2
+    {
+        font-size: 14px;
+    }
+
+    .p3
+    {
+        font-size: 12px;
+    }
+    // FONTS        ↑↑↑↑↑↑↑↑↑↑↑↑        FONTS //
+    //========================================//
+    // ESTILS       ↓↓↓↓↓↓↓↓↓↓↓↓       ESTILS //
+    body
+    {
+        margin: 0;
+        padding: 0;
+
+        header 
+        {
+            background-image: url(../assets/back1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-left: 10%;
+            padding-right: 10%;
+
+            .menu
+            {
+                padding-top: 4vh;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                ul 
+                {
+                    user-select: none;
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+
+                    display: flex;
+                    justify-content: space-between;
+                    width: 20vw;
+
+                    .linea_ul
+                    {
+                        border: 0;
+                        width: 100%;
+                        height: 1.5px;
+                        background-image: linear-gradient(to right,transparent,#50255f,transparent);   
+                    }
+
+                    &:hover
+                    {
+                        cursor: pointer;
+                    }
+                }
+
+                #logo
+                {
+                    content: "";
+                    display: block;
+                    height: 50px;
+                    width: 300px;
+                    background: url("../assets/logo.png") no-repeat;
+                    background-position: center;
+                    background-size: 160px;
+                }
+
+                form 
+                {
+                    display: flex;
+
+                    .buscador
+                    {
+                        display: flex;
+
+                        #search
+                        {
+                            height: 40px;
+                            width: 350px;
+                            padding-left: 30px;
+                            background-color: #50255f93;
+                            border: none;
+                            border-radius: 5px;
+                        }
+
+                        i 
+                        {
+                            position: relative;
+                            right: 2vw;
+                            height: 40px;
+                            width: 40px;
+                            background-image: url("../assets/icones_sprite.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position:-600px; 
+                        }
+                    }
+
+                    a 
+                    {
+                        position: relative;
+                        right: 1vw;
+                        height: 40px;
+                        width: 40px;
+                        background-image: url("../assets/icones_sprite.png");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position:-680px;
+
+                        &:hover
+                        {
+                            cursor: pointer;
+                        }
+                    }   
+                }
+            }
+
+            article
+            {
+                display: flex;
+                justify-content: space-between;
+
+                #sec1
+                {
+                    margin-top: 75px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 40%;
+
+                    #capsalera1
+                    {
+                        display: flex;
+
+                        .linea_headset
+                        {
+                            border: 0;
+                            width: 100%;
+                            height: 2px;
+                            
+                            background-image: linear-gradient(to right,transparent,#50255f,transparent);
+                        }
+                    }
+
+                    h1 
+                    {
+                        margin: 0;
+                    }
+
+                    .botons
+                    {
+                        display: flex;
+                        button
+                        {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            border: 1px solid #ffffff6e;
+                            border-radius: 6px;
+                            background-color: #3ddeed;
+                            height: 50px;
+                        }
+                        
+                        #b1 
+                        {
+                            width: 180px;
+                            box-shadow: 0 10px 70px #3ddeed;
+
+                            i
+                            {
+                                height: 40px;
+                                width: 36px;
+                                background-image: url("../assets/icones_sprite.png");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position:-560px;
+                                filter: brightness(0%);
+                            }
+                        }
+
+                        #b2
+                        {
+                            width: 120px;
+                            justify-content: space-around;
+                            color: #ffffff;
+                            background-color: transparent;
+                            margin-left: 30px;
+
+                            i
+                            {
+                                height: 40px;
+                                width: 36px;
+                                background-image: url("../assets/icones_sprite.png");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position:-160px;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    #follow
+                    {
+                        margin-top: 30px;
+                    }
+
+                    ul 
+                    {
+                        user-select: none;
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+
+                        display: flex;
+
+                        li 
+                        {
+                            margin-right: 15px;
+                        }
+
+                        #twitter
+                        {
+                            border: 1px solid #ffffff6e;
+                            border-radius: 6px;
+                            height: 40px;
+                            width: 36px;
+                            background-image: url("../assets/icones_sprite.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position:-200px;
+                        }
+
+                        #insta
+                        {
+                            border: 1px solid #ffffff6e;
+                            border-radius: 6px;
+                            height: 40px;
+                            width: 36px;
+                            background-image: url("../assets/icones_sprite.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position:-240px;
+                        }
+
+                        #discord
+                        {
+                            border: 1px solid #ffffff6e;
+                            border-radius: 6px;
+                            height: 40px;
+                            width: 36px;
+                            background-image: url("../assets/icones_sprite.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position:-280px;
+                        }
+
+                        #feisbus
+                        {
+                            border: 1px solid #ffffff6e;
+                            border-radius: 6px;
+                            height: 40px;
+                            width: 36px;
+                            background-image: url("../assets/icones_sprite.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position:-320px;
+                        }
+                    }
+                }
+
+                #sec2
+                {
+                    width: 60%;
+                    background-image: url("../assets/jhonn.png");
+                    background-repeat: no-repeat;
+                    background-size: 700px;
+                    background-position: right top;
+
+                    >:nth-child(1)
+                    {
+                        margin-left: 18vw;
+                        margin-top: 100px;
+                        
+                        color: #3ddeed;
+                    }
+
+                    >:nth-child(2)
+                    {
+                        margin-left: 6.5vw;
+                    }
+
+                    >:nth-child(3)
+                    {
+                        margin-top: 30px;
+                        margin-left: 13vw;
+                        margin-bottom: 0;
+                    }
+
+                    >:nth-child(4)
+                    {
+                        margin: 0;
+                        margin-top: 10px;
+                        margin-left: 38.5vw;
+
+                        color: #3ddeed;
+                    }
+
+                    div 
+                    {
+                        display: flex;
+                        justify-content: space-evenly;
+                        margin-top: 335px;
+                        margin-left: 12vw;
+
+                        p
+                        {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        :nth-child(1)
+                        {   
+                            i
+                            {
+                                height: 40px;
+                                width: 36px;
+                                background-image: url("../assets/icones_sprite.png");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position:-120px;
+                            }
+                        }
+
+                        :nth-child(2)
+                        {   
+                            i
+                            {
+                                height: 40px;
+                                width: 36px;
+                                background-image: url("../assets/icones_sprite.png");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position:-80px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #sep_jhon
+        {
+            border: 0;
+            width: 100%;
+            height: 3px;
+            
+            position: absolute;
+            top: 640px;
+
+            background-image: linear-gradient(to right,transparent,transparent,#50255f);
+        }
+    }
+}

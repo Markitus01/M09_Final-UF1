@@ -1,0 +1,288 @@
+@import url('satoshi.css');
+html {
+  height: 100%;
+  width: 100%;
+}
+html h1,
+html h2 {
+  font-family: Satoshi-Bold;
+  font-size: 80px;
+  color: #ffffff;
+}
+html h2 {
+  font-size: 56px;
+}
+html button {
+  font-family: Satoshi-Medium;
+  font-size: 18px;
+}
+html .p1,
+html .p2,
+html .p3 {
+  font-family: Satoshi-Regular;
+  font-size: 16px;
+  color: #ffffff;
+}
+html .p2 {
+  font-size: 14px;
+}
+html .p3 {
+  font-size: 12px;
+}
+html body {
+  margin: 0;
+  padding: 0;
+}
+html body header {
+  background-image: url(../assets/back1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+html body header .menu {
+  padding-top: 4vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html body header .menu ul {
+  user-select: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 20vw;
+}
+html body header .menu ul .linea_ul {
+  border: 0;
+  width: 100%;
+  height: 1.5px;
+  background-image: linear-gradient(to right, transparent, #50255f, transparent);
+}
+html body header .menu ul:hover {
+  cursor: pointer;
+}
+html body header .menu #logo {
+  content: "";
+  display: block;
+  height: 50px;
+  width: 300px;
+  background: url("../assets/logo.png") no-repeat;
+  background-position: center;
+  background-size: 160px;
+}
+html body header .menu form {
+  display: flex;
+}
+html body header .menu form .buscador {
+  display: flex;
+}
+html body header .menu form .buscador #search {
+  height: 40px;
+  width: 350px;
+  padding-left: 30px;
+  background-color: #50255f93;
+  border: none;
+  border-radius: 5px;
+}
+html body header .menu form .buscador i {
+  position: relative;
+  right: 2vw;
+  height: 40px;
+  width: 40px;
+  background-image: url("../assets/icones_sprite.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -600px;
+}
+html body header .menu form a {
+  position: relative;
+  right: 1vw;
+  height: 40px;
+  width: 40px;
+  background-image: url("../assets/icones_sprite.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -680px;
+}
+html body header .menu form a:hover {
+  cursor: pointer;
+}
+html body header article {
+  display: flex;
+  justify-content: space-between;
+}
+html body header article #sec1 {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+html body header article #sec1 #capsalera1 {
+  display: flex;
+}
+html body header article #sec1 #capsalera1 .linea_headset {
+  border: 0;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #50255f, transparent);
+}
+html body header article #sec1 h1 {
+  margin: 0;
+}
+html body header article #sec1 .botons {
+  display: flex;
+}
+html body header article #sec1 .botons button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #ffffff6e;
+  border-radius: 6px;
+  background-color: #3ddeed;
+  height: 50px;
+}
+html body header article #sec1 .botons #b1 {
+  width: 180px;
+  box-shadow: 0 10px 70px #3ddeed;
+}
+html body header article #sec1 .botons #b1 i {
+  height: 40px;
+  width: 36px;
+  background-image: url("../assets/icones_sprite.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -560px;
+  filter: brightness(0%);
+}
+html body header article #sec1 .botons #b2 {
+  width: 120px;
+  justify-content: space-around;
+  color: #ffffff;
+  background-color: transparent;
+  margin-left: 30px;
+}
+html body header article #sec1 .botons #b2 i {
+  height: 40px;
+  width: 36px;
+  background-image: url("../assets/icones_sprite.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -160px;
+  color: black;
+}
+html body header article #sec1 #follow {
+  margin-top: 30px;
+}
+html body header article #sec1 ul {
+  user-select: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+html body header article #sec1 ul li {
+  margin-right: 15px;
+}
+html body header article #sec1 ul #twitter {
+  border: 1px solid #ffffff6e;
+  border-radius: 6px;
+  height: 40px;
+  width: 36px;
+  background-image: url("../assets/icones_sprite.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -200px;
+}
+html body header article #sec1 ul #insta {
+  border: 1px solid #ffffff6e;
+  border-radius: 6px;
+  height: 40px;
+  width: 36px;
+  background-image: url("../assets/icones_sprite.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -240px;
+}
+html body header article #sec1 ul #discord {
+  border: 1px solid #ffffff6e;
+  border-radius: 6px;
+  height: 40px;
+  width: 36px;
+  background-image: url("../assets/icones_sprite.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -280px;
+}
+html body header article #sec1 ul #feisbus {
+  border: 1px solid #ffffff6e;
+  border-radius: 6px;
+  height: 40px;
+  width: 36px;
+  background-image: url("../assets/icones_sprite.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -320px;
+}
+html body header article #sec2 {
+  width: 60%;
+  background-image: url("../assets/jhonn.png");
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: right top;
+}
+html body header article #sec2 > :nth-child(1) {
+  margin-left: 18vw;
+  margin-top: 100px;
+  color: #3ddeed;
+}
+html body header article #sec2 > :nth-child(2) {
+  margin-left: 6.5vw;
+}
+html body header article #sec2 > :nth-child(3) {
+  margin-top: 30px;
+  margin-left: 13vw;
+  margin-bottom: 0;
+}
+html body header article #sec2 > :nth-child(4) {
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 38.5vw;
+  color: #3ddeed;
+}
+html body header article #sec2 div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 335px;
+  margin-left: 12vw;
+}
+html body header article #sec2 div p {
+  display: flex;
+  align-items: center;
+}
+html body header article #sec2 div :nth-child(1) i {
+  height: 40px;
+  width: 36px;
+  background-image: url("../assets/icones_sprite.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -120px;
+}
+html body header article #sec2 div :nth-child(2) i {
+  height: 40px;
+  width: 36px;
+  background-image: url("../assets/icones_sprite.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -80px;
+}
+html body #sep_jhon {
+  border: 0;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 640px;
+  background-image: linear-gradient(to right, transparent, transparent, #50255f);
+}

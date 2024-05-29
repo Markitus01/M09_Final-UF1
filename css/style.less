@@ -307,6 +307,7 @@ html
                     background-repeat: no-repeat;
                     background-size: 700px;
                     background-position: right top;
+                    filter: drop-shadow(150px -50px 300px #50255f);
 
                     >:nth-child(1)
                     {
@@ -390,6 +391,361 @@ html
             top: 640px;
 
             background-image: linear-gradient(to right,transparent,transparent,#50255f);
+        }
+
+        main 
+        {
+            background-color: #090016; // Se que no estába incluit a la guía de colors, pero es que és el color correcte per a poder posar-hi els glows :)
+
+            article 
+            {
+                display: flex;
+
+                #vr 
+                {
+                    border-radius: 50%;
+                    filter: drop-shadow(100px -150px 300px #50255f) drop-shadow(-100px 150px 300px #50255f);
+                }
+
+                #facts
+                {
+                    margin-top: 150px;
+                    width: 35%;
+
+                    div 
+                    {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        p 
+                        {
+                            display: flex;
+                            width: 50%;
+
+                            i
+                            {
+                                height: 40px;
+                                width: 36px;
+                                background-image: url("../assets/icones_sprite.png");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position:-50px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #jane
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+                display: flex;
+
+                >section:nth-child(1)
+                {
+                    h2 
+                    {
+                        margin-right: 34%;
+                    }
+
+                    p
+                    {
+                        margin-right: 15%;
+                    }
+
+                    button 
+                    {
+                        width: 210px;
+                        color: #3ddeed;
+                        background-color: #3ddeed1a;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        border: none;
+                        border-radius: 6px;
+                        height: 60px;
+                        margin-top: 50px;
+                        
+                        i
+                        {
+                            height: 40px;
+                            width: 36px;
+                            background-image: url("../assets/icones_sprite.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position:-560px;
+                        }
+                    }
+
+                    div 
+                    {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 100px;
+
+                        img 
+                        {
+                            clip-path: polygon(50% 0, 85% 10%, 60% 20%, 60% 80%, 85% 90%, 50% 100%, 0% 75%, 0% 25%);
+
+                            width: 50px;
+                            height: 60px;
+
+                            &:not(:first-child) // https://stackoverflow.com/questions/4013701/select-all-tr-except-the-first-one
+                            {
+                                margin-left: -16px;
+                            }
+
+                            &:nth-child(5)
+                            {
+                                clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                            }
+                        }
+
+                        span 
+                        {
+                            margin-left: 20px;
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                >section:nth-child(2)
+                {
+                    filter: drop-shadow(50px 50px 100px #50255f);
+                    
+                    #ombra 
+                    {
+                        background-color: #bd00ff;
+                        width: 710px;
+                        height: 555px;
+                        border-radius: 5px;
+                        clip-path: polygon(25% 0, 100% 0, 100% 75%, 75% 100%, 0 100%, 0% 25%);
+
+                        display: flex; 
+                        align-items: center; 
+                        justify-content: center; 
+                        
+                        img 
+                        {
+                            width: 700px;
+                            clip-path: polygon(25% 0, 100% 0, 100% 75%, 75% 100%, 0 100%, 0% 25%);
+                        }
+                    }   
+
+                    .tweet
+                    {
+                        position: relative;
+                        left: -150px;
+                        top: -250px;
+
+                        background-color: #ffffff;
+                        width: 460px;
+                        height: 300px;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        border-radius: 10px;
+                        padding: 20px;
+
+                        .user
+                        {
+                            display: flex;
+                            align-items: center;
+
+                            img 
+                            {
+                                border-radius: 50%;
+                                width: 60px;
+                                height: 60px;
+                            }
+
+                            div 
+                            {
+                                margin-left: 10px;
+                                p
+                                {
+                                    margin: 0;
+                                }
+
+                                .p1 
+                                {
+                                    color: black;
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                }
+
+                                .p2 
+                                {
+                                    color: gray;
+                                }
+                            }
+                        }
+
+                        .p1
+                        {
+                            color: black;
+                            font-size: 24px;
+                        }
+
+                        .p2
+                        {
+                            color: gray;
+                            font-size: 17px;
+
+                            span 
+                            {
+                                color: #43b4ff;
+                            }
+
+                            strong 
+                            {
+                                color: black;
+                            }
+                        }
+
+                        #interaccions
+                        {
+                            display: flex;
+                            justify-content: space-around;
+
+                            i
+                            {
+                                height: 40px;
+                                width: 36px;
+                                background-image: url("../assets/icones_sprite.png");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+
+                            i:nth-child(1)
+                            {
+                                background-position:-360px;
+                            }
+
+                            i:nth-child(2)
+                            {
+                                background-position:-480px;
+                            }
+
+                            i:nth-child(3)
+                            {
+                                background-position:-400px;
+                            }
+
+                            i:nth-child(4)
+                            {
+                                background-position:-440px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #games 
+            {
+                background-image: url(../assets/back2.png); 
+                background-size: cover;
+                background-repeat: no-repeat;
+                flex-wrap: wrap;
+                
+                >div 
+                {
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+                    p 
+                    {
+                        width: 25%;
+
+                        label 
+                        {
+                            color: #3ddeed;
+                        }
+                    }
+
+                    div
+                    {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 10%;
+
+                        i 
+                        {
+                            height: 40px;
+                            width: 40px;
+                            padding: 10px;
+                            background-color: #3ddeed1a;
+                            background-image: url("../assets/icones_sprite.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position:-835px;
+                            border-radius: 5px;
+
+                            &:first-child
+                            {
+                                rotate: 180deg;
+                            }
+                        }
+                    }
+                }
+
+                section
+                {
+                    display: flex;
+                    justify-content: space-between;
+                    overflow: hidden;
+                    margin-left: 10%;
+
+                    .joc:nth-child(2)
+                    {
+                        filter: drop-shadow(0px 200px 300px #50255f);
+                    }
+                    
+                    .joc 
+                    {
+                        margin-right: 80px;
+
+                        .ombrajoc
+                        {
+                            background-color: #50255f;
+                            width: 434px;
+                            height: 446px;
+                            border-radius: 5px;
+                            clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+
+                            display: flex; 
+                            flex-direction: column;
+                            align-items: center; 
+                            justify-content: center;
+                        }
+
+                        img 
+                        {
+                            width: 430px;
+                            clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+                        }
+
+                        h2 
+                        {
+                            font-size: 28px;
+                        }
+
+                        &:nth-child(2)
+                        {
+                            h2 
+                            {
+                                color: #bd00ff;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

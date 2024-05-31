@@ -32,6 +32,7 @@ html .p3 {
 html body {
   margin: 0;
   padding: 0;
+  background-color: #090016;
 }
 html body header {
   background-image: url(../assets/back1.png);
@@ -132,6 +133,17 @@ html body header article #sec1 #capsalera1 .linea_headset {
 html body header article #sec1 h1 {
   margin: 0;
 }
+html body header article #sec1 p {
+  display: flex;
+  align-items: center;
+}
+html body header article #sec1 p i {
+  height: 40px;
+  width: 40px;
+  background-image: url("../assets/icones_sprite.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 html body header article #sec1 .botons {
   display: flex;
 }
@@ -228,30 +240,32 @@ html body header article #sec1 ul #feisbus {
 }
 html body header article #sec2 {
   width: 60%;
-  background-image: url("../assets/jhonn.png");
-  background-repeat: no-repeat;
-  background-size: 700px;
-  background-position: right top;
   filter: drop-shadow(150px -50px 300px #50255f);
 }
 html body header article #sec2 > :nth-child(1) {
-  margin-left: 18vw;
+  margin-left: 330px;
   margin-top: 100px;
   color: #3ddeed;
 }
 html body header article #sec2 > :nth-child(2) {
-  margin-left: 6.5vw;
+  margin-left: 110px;
 }
 html body header article #sec2 > :nth-child(3) {
   margin-top: 30px;
-  margin-left: 13vw;
+  margin-left: 230px;
   margin-bottom: 0;
 }
 html body header article #sec2 > :nth-child(4) {
-  margin: 0;
   margin-top: 10px;
-  margin-left: 38.5vw;
+  margin-left: 735px;
+  width: 95px;
   color: #3ddeed;
+}
+html body header article #sec2 > img {
+  position: absolute;
+  width: 700px;
+  top: 0;
+  left: 220px;
 }
 html body header article #sec2 div {
   display: flex;
@@ -284,7 +298,7 @@ html body #sep_jhon {
   width: 100%;
   height: 3px;
   position: absolute;
-  top: 640px;
+  top: 645px;
   background-image: linear-gradient(to right, transparent, transparent, #50255f);
 }
 html body main {
@@ -292,14 +306,19 @@ html body main {
 }
 html body main article {
   display: flex;
+  justify-content: space-between;
 }
 html body main article #vr {
   border-radius: 50%;
   filter: drop-shadow(100px -150px 300px #50255f) drop-shadow(-100px 150px 300px #50255f);
 }
+html body main article #vr img {
+  width: 900px;
+}
 html body main article #facts {
-  margin-top: 150px;
-  width: 35%;
+  margin-right: 5%;
+  margin-top: 80px;
+  width: 50%;
 }
 html body main article #facts div {
   display: flex;
@@ -478,12 +497,12 @@ html body main #games > div p {
 html body main #games > div p label {
   color: #3ddeed;
 }
-html body main #games > div div {
+html body main #games > div > div {
   display: flex;
   justify-content: space-between;
   width: 10%;
 }
-html body main #games > div div i {
+html body main #games > div > div > i {
   height: 40px;
   width: 40px;
   padding: 10px;
@@ -494,22 +513,20 @@ html body main #games > div div i {
   background-position: -835px;
   border-radius: 5px;
 }
-html body main #games > div div i:first-child {
+html body main #games > div > div > i:first-child {
   rotate: 180deg;
 }
-html body main #games section {
+html body main #games > section {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
   margin-left: 10%;
+  padding-bottom: 150px;
 }
-html body main #games section .joc:nth-child(2) {
-  filter: drop-shadow(0px 200px 300px #50255f);
-}
-html body main #games section .joc {
+html body main #games > section .joc {
   margin-right: 80px;
 }
-html body main #games section .joc .ombrajoc {
+html body main #games > section .joc .ombrajoc {
   background-color: #50255f;
   width: 434px;
   height: 446px;
@@ -520,13 +537,449 @@ html body main #games section .joc .ombrajoc {
   align-items: center;
   justify-content: center;
 }
-html body main #games section .joc img {
+html body main #games > section .joc img {
   width: 430px;
   clip-path: polygon(75% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
 }
-html body main #games section .joc h2 {
+html body main #games > section .joc h2 {
   font-size: 28px;
 }
-html body main #games section .joc:nth-child(2) h2 {
+html body main #games > section .joc:nth-child(2) {
+  filter: drop-shadow(0px 100px 60px #50255f);
+}
+html body main #games > section .joc:nth-child(2) h2 {
   color: #bd00ff;
+}
+html body main #games #faq {
+  flex-direction: column;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-bottom: 200px;
+}
+html body main #games #faq section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  background-color: #2b1a3b8c;
+}
+html body main #games #faq section div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+html body main #games #faq section div h2 {
+  font-size: 26px;
+}
+html body main #games #faq section div p {
+  width: 100%;
+  font-size: 20px;
+}
+html body main #games #faq section div i {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  background-image: url("../assets/icones_sprite.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -775px;
+}
+html body main #games #faq section:nth-child(3) {
+  background-color: #5e4c6e79;
+}
+html body main #games #faq section:nth-child(3) i {
+  rotate: 180deg;
+  filter: invert(22%) sepia(84%) saturate(7061%) hue-rotate(281deg) brightness(99%) contrast(126%);
+}
+html body footer {
+  background-color: #1f112d;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+html body footer .p2 {
+  color: rgba(255, 255, 255, 0.671);
+}
+html body footer > div {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+html body footer > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+html body footer > div > div ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+html body footer > div > div ul li {
+  margin-bottom: 15px;
+}
+html body footer > div > div img {
+  width: 130px;
+}
+html body footer > div > div form input {
+  height: 50px;
+  width: 300px;
+  padding-left: 30px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.671);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.281);
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  margin-right: 0;
+}
+html body footer > div > div form button {
+  border: 1px solid #3ddeed;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #3ddeed;
+  height: 54px;
+  margin-left: 0;
+}
+html body footer > div div:nth-child(2) {
+  flex-direction: row;
+  width: 30%;
+  justify-content: space-around;
+}
+html body footer hr {
+  border: 0;
+  width: 70%;
+  height: 3px;
+  background-image: linear-gradient(to right, transparent, #50255f, transparent);
+}
+html body footer p {
+  text-align: center;
+}
+@media (max-width: 1700px) {
+  html > body > main > article#jane > section > div.tweet {
+    left: -50px !important;
+  }
+}
+@media (max-width: 1540px) {
+  html > body header .menu form .buscador i {
+    right: 3vw;
+  }
+  html > body header article #sec2 > :nth-child(1) {
+    margin-top: 165px;
+    margin-left: 240px;
+  }
+  html > body header article #sec2 > :nth-child(2) {
+    margin-left: 40px;
+  }
+  html > body header article #sec2 > :nth-child(3) {
+    margin-top: 0;
+    margin-left: 140px;
+  }
+  html > body header article #sec2 > :nth-child(4) {
+    margin-left: 580px;
+  }
+  html > body header article #sec2 > img {
+    width: 600px;
+    top: 80px;
+    left: 140px;
+  }
+  html > body header article #sec2 div {
+    margin-top: 270px;
+  }
+  html > body main #vr {
+    width: 50%;
+  }
+  html > body main #vr img {
+    position: relative;
+    right: 80px;
+    width: 800px !important;
+  }
+  html > body main #facts {
+    margin-left: 2%;
+    margin-right: 2% !important;
+  }
+  html > body main #jane {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  html > body main #jane > section:nth-child(1) h2 {
+    margin-right: 15%;
+  }
+  html > body main #jane > section:nth-child(2) #ombra {
+    width: 560px;
+    height: 440px;
+  }
+  html > body main #jane > section:nth-child(2) #ombra img {
+    width: 550px;
+  }
+  html > body main #jane > section:nth-child(2) .tweet {
+    left: -20px !important;
+    top: -180px;
+  }
+  html > body main #games div div > i {
+    margin: 5px;
+    background-position: -840px;
+  }
+  html > body main #games #faq {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media (max-width: 1300px) {
+  html > body header .menu ul {
+    display: none;
+  }
+  html > body header .menu i {
+    display: block !important;
+    height: 40px;
+    width: 40px;
+    background-image: url("../assets/icones_sprite.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -640px;
+  }
+  html > body header .menu form .buscador input {
+    display: none;
+  }
+  html > body header article {
+    flex-direction: column;
+  }
+  html > body header article section {
+    width: 100% !important;
+  }
+  html > body header article #sec2 p {
+    display: none;
+  }
+  html > body header article #sec2 > img {
+    position: inherit;
+    width: 100%;
+    top: 0;
+    left: 0;
+    clip-path: polygon(30% 0%, 66% 0, 66% 46%, 100% 46%, 100% 100%, 0 100%, 0 40%, 36% 40%);
+  }
+  html > body header article #sec2 div {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  html > body #sep_jhon {
+    position: relative;
+    top: -120px;
+    background-image: linear-gradient(to right, transparent, #50255f, #50255f);
+  }
+  html > body main #gafas {
+    flex-direction: column-reverse;
+  }
+  html > body main #vr {
+    width: 100%;
+  }
+  html > body main #vr img {
+    position: relative;
+    right: 0;
+    width: 100% !important;
+  }
+  html > body main #facts {
+    width: 100% !important;
+    margin: 0;
+  }
+  html > body main #facts h2 {
+    text-align: center;
+  }
+  html > body main #facts > div {
+    display: flex;
+    justify-content: space-around;
+  }
+  html > body main #facts > div p {
+    width: 40% !important;
+  }
+  html > body main #games div {
+    margin: 0;
+    justify-content: space-around;
+  }
+  html > body main #games div div {
+    display: none;
+  }
+  html > body main #games #faq {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media (max-width: 1100px) {
+  html body main #jane {
+    flex-direction: column;
+  }
+  html body main #jane > section:nth-child(1) > div {
+    margin-top: 40px;
+  }
+  html body main #jane > section:nth-child(2) {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  html body main #jane > section:nth-child(2) #ombra {
+    width: 710px;
+    height: 555px;
+  }
+  html body main #jane > section:nth-child(2) #ombra img {
+    width: 700px;
+  }
+  html body main #jane > section:nth-child(2) .tweet {
+    position: relative;
+    left: -350px !important;
+    top: -250px;
+  }
+  html body main #games #faq {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  html body main #games #faq section:nth-child(3) {
+    display: none;
+  }
+  html body main #games #faq section:nth-child(4) {
+    display: block !important;
+  }
+  html footer > div {
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+  }
+}
+@media (max-width: 900px) {
+  html > body > main #jane > section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html > body > main #jane > section:nth-child(2) #ombra {
+    width: 660px;
+    height: 515px;
+  }
+  html > body > main #jane > section:nth-child(2) #ombra img {
+    width: 650px;
+  }
+  html > body > main #jane > section:nth-child(2) .tweet {
+    position: relative;
+    left: 0 !important;
+    top: -150px;
+    width: 100%;
+  }
+  html > body > main #games > #faq > section > div > h2 {
+    font-size: 20px;
+  }
+  html > body > #sep_jhon {
+    top: -100px;
+  }
+  html > body > footer > div {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 700px) {
+  html > body > main #jane > section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html > body > main #jane > section:nth-child(2) #ombra {
+    width: 535px;
+    height: 420px;
+  }
+  html > body > main #jane > section:nth-child(2) #ombra img {
+    width: 525px;
+  }
+  html > body > main #facts > div {
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  html > body > main #facts > div p {
+    width: 100% !important;
+  }
+  html > body > main #facts > div p:nth-child(1),
+  html > body > main #facts > div p:nth-child(2),
+  html > body > main #facts > div p:nth-child(3) {
+    display: none;
+  }
+  html > body > main #games > div:nth-child(1) {
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  html > body > main #games > div:nth-child(1) h2,
+  html > body > main #games > div:nth-child(1) p {
+    width: 100%;
+  }
+  html > body > main #games #faq > section > div > h2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 540px) {
+  html > body header > article > #sec1 .botons {
+    flex-direction: column;
+    align-items: center;
+  }
+  html > body header > article > #sec1 .botons button {
+    width: 180px !important;
+    margin: 0 !important;
+  }
+  html > body header > article > #sec1 .botons #b2 {
+    margin-top: 15px !important;
+  }
+  html > body header > article > #sec1 h1 {
+    font-size: 40px;
+  }
+  html > body main #gafas > #facts > h2 {
+    font-size: 28px;
+  }
+  html > body main #jane > section:nth-child(1) > h2 {
+    font-size: 28px;
+  }
+  html > body main #jane > section:nth-child(2) #ombra {
+    width: 355px;
+    height: 280px;
+  }
+  html > body main #jane > section:nth-child(2) #ombra img {
+    width: 350px !important;
+  }
+  html > body main #jane > section:nth-child(2) .tweet {
+    top: -60px;
+  }
+  html > body main #games div > h2 {
+    font-size: 28px;
+  }
+  html > body main #games #faq section {
+    padding: 0;
+    padding-left: 10px;
+  }
+  html > body main #games #faq section div > h2 {
+    font-size: 2.5vw;
+  }
+  html > body footer > div {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  html > body footer > div > div > form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  html > body footer > div > div > form input {
+    padding-left: 0;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.281) !important;
+    border-radius: 5px 5px 5px 5px !important;
+  }
+  html > body footer > div > div > form button {
+    margin-top: 20px;
+    border: 1px solid #3ddeed !important;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #3ddeed;
+  }
 }

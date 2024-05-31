@@ -46,6 +46,7 @@ html
     {
         margin: 0;
         padding: 0;
+        background-color: #090016;
 
         header 
         {
@@ -179,6 +180,20 @@ html
                         margin: 0;
                     }
 
+                    p
+                    {
+                        display: flex;
+                        align-items: center;
+                        i
+                        {
+                            height: 40px;
+                            width: 40px;
+                            background-image: url("../assets/icones_sprite.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                    }
+
                     .botons
                     {
                         display: flex;
@@ -303,15 +318,11 @@ html
                 #sec2
                 {
                     width: 60%;
-                    background-image: url("../assets/jhonn.png");
-                    background-repeat: no-repeat;
-                    background-size: 700px;
-                    background-position: right top;
                     filter: drop-shadow(150px -50px 300px #50255f);
 
                     >:nth-child(1)
                     {
-                        margin-left: 18vw;
+                        margin-left: 330px;
                         margin-top: 100px;
                         
                         color: #3ddeed;
@@ -319,23 +330,31 @@ html
 
                     >:nth-child(2)
                     {
-                        margin-left: 6.5vw;
+                        margin-left: 110px;
                     }
 
                     >:nth-child(3)
                     {
                         margin-top: 30px;
-                        margin-left: 13vw;
+                        margin-left: 230px;
                         margin-bottom: 0;
                     }
 
                     >:nth-child(4)
                     {
-                        margin: 0;
                         margin-top: 10px;
-                        margin-left: 38.5vw;
+                        margin-left: 735px;
+                        width: 95px;
 
                         color: #3ddeed;
+                    }
+
+                    >img 
+                    {
+                        position: absolute;
+                        width: 700px;
+                        top: 0;
+                        left: 220px;
                     }
 
                     div 
@@ -388,7 +407,7 @@ html
             height: 3px;
             
             position: absolute;
-            top: 640px;
+            top: 645px;
 
             background-image: linear-gradient(to right,transparent,transparent,#50255f);
         }
@@ -400,17 +419,24 @@ html
             article 
             {
                 display: flex;
+                justify-content: space-between;
 
                 #vr 
                 {
                     border-radius: 50%;
                     filter: drop-shadow(100px -150px 300px #50255f) drop-shadow(-100px 150px 300px #50255f);
+
+                    img 
+                    {
+                        width: 900px;
+                    }
                 }
 
                 #facts
                 {
-                    margin-top: 150px;
-                    width: 35%;
+                    margin-right: 5%;
+                    margin-top: 80px;
+                    width: 50%;
 
                     div 
                     {
@@ -669,13 +695,13 @@ html
                         }
                     }
 
-                    div
+                    >div
                     {
                         display: flex;
                         justify-content: space-between;
                         width: 10%;
 
-                        i 
+                        >i 
                         {
                             height: 40px;
                             width: 40px;
@@ -695,17 +721,13 @@ html
                     }
                 }
 
-                section
+                >section
                 {
                     display: flex;
                     justify-content: space-between;
                     overflow: hidden;
                     margin-left: 10%;
-
-                    .joc:nth-child(2)
-                    {
-                        filter: drop-shadow(0px 200px 300px #50255f);
-                    }
+                    padding-bottom: 150px;
                     
                     .joc 
                     {
@@ -742,7 +764,767 @@ html
                             {
                                 color: #bd00ff;
                             }
+                            filter: drop-shadow(0px 100px 60px #50255f);
                         }
+                    }
+                }
+
+                #faq 
+                {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-left: 25%;
+                    margin-right: 25%;
+                    padding-bottom: 200px;
+
+                    section 
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        width: 100%;
+                        padding: 10px;
+                        margin: 10px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        border-radius: 10px;
+
+                        background-color: #2b1a3b8c;
+                        
+                        div 
+                        {   
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            width: 100%;
+                            justify-content: space-between;
+
+                            h2 
+                            {
+                                font-size: 26px;
+                            }
+                            
+                            p 
+                            {
+                                width: 100%;
+                                font-size: 20px;
+                            }
+
+                            i 
+                            {
+                                height: 40px;
+                                width: 40px;
+                                padding: 10px;
+                                background-image: url("../assets/icones_sprite.png");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position:-775px;
+                            }
+                        }
+
+                        &:nth-child(3)
+                        {
+                            background-color: #5e4c6e79;
+
+                            i 
+                            {
+                                // Filtre fet amb https://codepen.io/sosuke/pen/Pjoqqp
+                                rotate: 180deg;
+                                filter: invert(22%) sepia(84%) saturate(7061%) hue-rotate(281deg) brightness(99%) contrast(126%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        footer 
+        {
+            background-color: #1f112d;
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+
+            .p2 
+            {
+                color: rgba(255, 255, 255, 0.671);
+            }
+
+            >div 
+            {
+                display: flex;
+                justify-content: space-around;
+
+                margin-left: 15%;
+                margin-right: 15%;
+
+                >div 
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    ul
+                    {
+                        padding: 0;
+                        margin: 0;
+                        list-style-type: none;
+                        
+                        li 
+                        {
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    img 
+                    {
+                        width: 130px;
+                    }
+
+                    
+                    form 
+                    {
+                        input 
+                        {
+                            height: 50px;
+                            width: 300px;
+                            padding-left: 30px;
+                            font-size: 16px;
+                            color: rgba(255, 255, 255, 0.671);
+                            background-color: transparent;
+                            border: 1px solid rgba(255, 255, 255, 0.281);
+                            border-right: none;
+                            border-radius: 5px 0 0 5px;
+                            margin-right: 0;
+                        }
+
+                        button 
+                        {
+                            border: 1px solid #3ddeed;
+                            border-left: none;
+                            border-radius: 0 5px 5px 0;
+                            background-color: #3ddeed;
+                            height: 54px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+
+                div:nth-child(2)
+                {
+                    flex-direction: row;
+                    width: 30%;
+                    justify-content: space-around;
+                }
+            }
+
+            hr 
+            {
+                border: 0;
+                width: 70%;
+                height: 3px;
+
+                background-image: linear-gradient(to right,transparent,#50255f,transparent);
+            }
+
+            p 
+            {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 1700px)
+{
+    html > body > main > article#jane > section > div.tweet
+    {
+        left: -50px !important;
+    }
+}
+
+@media (max-width: 1540px)
+{
+    html > body
+    {
+        header
+        {
+            .menu 
+            {
+                form 
+                {
+                    .buscador
+                    {   
+                        i
+                        {
+                            right: 3vw;
+                        }
+                    }
+                }
+            } 
+
+            article 
+            {
+                #sec2
+                {
+                    >:nth-child(1)
+                    {
+                        margin-top: 165px;
+                        margin-left: 240px;
+                    }
+
+                    >:nth-child(2)
+                    {
+                        margin-left: 40px;
+                    }
+
+                    >:nth-child(3)
+                    {
+                        margin-top: 0;
+                        margin-left: 140px;
+                    }
+
+                    >:nth-child(4)
+                    {
+                        margin-left: 580px;
+                    }
+
+                    >img 
+                    {
+                        width: 600px;
+                        top: 80px;
+                        left: 140px;
+                    }
+
+                    div 
+                    {
+                        margin-top: 270px;
+                    }
+                }
+            } 
+        } 
+
+        main 
+        {
+            #vr
+            {
+                width: 50%;
+
+                img
+                {   
+                    position: relative;
+                    right: 80px;
+                    width: 800px !important;
+                }
+            }
+
+            #facts 
+            {
+                margin-left: 2%;
+                margin-right: 2% !important;
+            }
+
+            #jane 
+            {
+                padding-left: 5%;
+                padding-right: 5%;
+
+                >section:nth-child(1)
+                {
+                    h2 
+                    {
+                        margin-right: 15%;
+                    }
+                }
+
+                >section:nth-child(2)
+                {     
+                    #ombra 
+                    {
+                        width: 560px;
+                        height: 440px;
+
+                        img 
+                        {
+                            width: 550px;
+                        }
+                    }   
+
+                    .tweet
+                    {
+                        left: -20px !important;
+                        top: -180px;
+                    }
+                }
+            }
+
+            #games
+            {
+                div
+                {
+                    div 
+                    {
+                        >i 
+                        {
+                            margin: 5px;
+                            background-position:-840px;
+                        }
+                    }
+                }
+
+                #faq
+                {
+                    margin-left: 15%;
+                    margin-right: 15%;
+                }
+            }
+        }
+    } 
+}
+
+@media (max-width: 1300px)
+{
+    html > body
+    {
+        header
+        {
+            .menu 
+            {
+                ul 
+                {
+                    display: none;
+                }
+
+                i
+                {
+                    display: block !important;
+                    height: 40px;
+                    width: 40px;
+                    background-image: url("../assets/icones_sprite.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: -640px;
+                }
+
+                form 
+                {
+                    .buscador
+                    {   
+                        input 
+                        {
+                            display: none;
+                        }
+                    }
+                }
+            } 
+
+            article 
+            {
+                flex-direction: column;
+                
+                section
+                {
+                    width: 100% !important;
+                }
+
+                #sec2
+                {
+                    p
+                    {
+                        display: none;
+                    }
+
+                    >img 
+                    {
+                        position: inherit;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                        clip-path: polygon(30% 0%, 66% 0, 66% 46%, 100% 46%, 100% 100%, 0 100%, 0 40%, 36% 40%);
+                    }
+
+                    div 
+                    {
+                        margin-top: 0;
+                        margin-left: 0;
+                    }
+                }
+            } 
+        } 
+
+        #sep_jhon
+        {
+            position: relative;
+            top: -120px;
+            background-image: linear-gradient(to right,transparent,#50255f,#50255f);
+        }
+
+        main 
+        {
+            #gafas 
+            {
+                flex-direction: column-reverse;
+            }
+
+            #vr
+            {
+                width: 100%;
+
+                img
+                {   
+                    position: relative;
+                    right: 0;
+                    width: 100% !important;
+                }
+            }
+
+            #facts 
+            {
+                width: 100% !important;
+                margin: 0;
+
+                h2 
+                {
+                    text-align: center;
+                }
+
+                >div 
+                {
+                    display: flex;
+                    justify-content: space-around;
+
+                    p 
+                    {
+                        width: 40% !important;
+                    }
+                }
+            }
+
+            #games
+            {
+                div
+                {
+                    margin: 0;
+                    justify-content: space-around;
+                    div 
+                    {
+                        display: none;
+                    }
+                }
+
+                #faq
+                {
+                    margin-left: 15%;
+                    margin-right: 15%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px)
+{
+    html 
+    {
+        body 
+        {
+            main 
+            {
+                #jane 
+                {
+                    flex-direction: column;
+
+                    >section:nth-child(1) > div
+                    {
+                        margin-top: 40px;
+                    }
+
+                    >section:nth-child(2)
+                    {
+                        margin-top: 60px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: end;
+
+                        #ombra 
+                        {
+                            width: 710px;
+                            height: 555px;
+                            
+                            img 
+                            {
+                                width: 700px;
+                            }
+                        }   
+
+                        .tweet
+                        {
+                            position: relative;
+                            left: -350px !important;
+                            top: -250px;
+                        }
+                    }
+                }
+
+                #games 
+                {
+                    #faq 
+                    {
+                        margin-left: 6%;
+                        margin-right: 6%;
+
+                        section 
+                        {
+                            &:nth-child(3)
+                            {
+                                display: none;
+                            }
+
+                            &:nth-child(4)
+                            {
+                                display: block !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        footer > div 
+        {
+            margin-left: 5% !important;
+            margin-right: 5% !important;
+        }
+    }
+}
+
+@media (max-width: 900px)
+{
+    html > body > main
+    {
+        #jane
+        {
+            >section:nth-child(2)
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                #ombra 
+                {
+                    width: 660px;
+                    height: 515px;
+                    
+                    img 
+                    {
+                        width: 650px;
+                    }
+                }   
+
+                .tweet
+                {
+                    position: relative;
+                    left: 0 !important;
+                    top: -150px;
+                    width: 100%;
+                }
+            }
+        }
+
+        #games > #faq > section > div > h2
+        {
+            font-size: 20px;
+        }
+    }
+
+    html > body > #sep_jhon
+    {
+        top: -100px;
+    }
+
+    html > body > footer > div
+    {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 700px)
+{
+    html > body > main
+    {
+        #jane
+        {
+            >section:nth-child(2)
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                #ombra 
+                {
+                    width: 535px;
+                    height: 420px;
+                    
+                    img 
+                    {
+                        width: 525px;
+                    }
+                }   
+            }
+        }
+
+        #facts 
+        {
+            >div 
+            {
+                flex-direction: column;
+                margin-left: 5%;
+                margin-right: 5%;
+
+                p
+                {
+                    width: 100% !important;
+                }
+
+                p:nth-child(1), p:nth-child(2), p:nth-child(3)
+                {
+                    display: none;
+                }
+            }
+        }
+
+        #games
+        {
+            >div:nth-child(1)
+            {
+                flex-direction: column;
+                margin-left: 5%;
+                margin-right: 5%;
+
+                h2, p
+                {
+                    width: 100%;
+                }
+            }
+            
+            #faq > section > div > h2
+            {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px)
+{
+    html > body 
+    {
+        header > article > #sec1
+        {
+            .botons
+            {
+                flex-direction: column;
+                align-items: center;
+                button 
+                {
+                    width: 180px !important;
+                    margin: 0 !important;
+                }
+                #b2 
+                {
+                    margin-top: 15px !important;
+                }
+            }
+
+            h1
+            { 
+                font-size: 40px;
+            }
+        }
+
+        main
+        {
+            #gafas > #facts > h2
+            {
+                font-size: 28px;
+            }
+
+            #jane
+            {
+                >section:nth-child(1) > h2
+                {
+                    font-size: 28px;
+                }
+
+                >section:nth-child(2)
+                {
+                    #ombra 
+                    {
+                        width: 355px;
+                        height: 280px;
+                        
+                        img 
+                        {
+                            width: 350px !important;
+                        }
+                    }   
+
+                    .tweet
+                    {
+                        top: -60px;
+                    }
+                }
+            }
+
+            #games
+            {
+                div > h2 
+                {
+                    font-size: 28px;
+                }
+
+                #faq
+                {
+                    section
+                    {
+                        padding: 0;
+                        padding-left: 10px;
+
+                        div > h2 
+                        {
+                            font-size: 2.5vw;
+                        }
+                    }
+                }
+            }
+        }
+
+        footer > div
+        {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            
+            >div 
+            {
+                >form 
+                {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+
+                    input 
+                    {
+                        padding-left: 0;
+                        width: 100%;
+                        border: 1px solid rgba(255, 255, 255, 0.281) !important;
+                        border-radius: 5px 5px 5px 5px !important;
+                    }
+
+                    button 
+                    {
+                        margin-top: 20px;
+                        border: 1px solid #3ddeed !important;
+                        border-radius: 5px 5px 5px 5px;
+                        background-color: #3ddeed;
                     }
                 }
             }
